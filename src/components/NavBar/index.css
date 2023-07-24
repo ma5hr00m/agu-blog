@@ -1,0 +1,15 @@
+.active {
+  display: flex;
+  text-decoration: none;
+  align-items: end;
+  color: lightgreen;
+  transition: color 0.5s ease;
+}
+
+.inactive {
+  display: flex;
+  text-decoration: none;
+  align-items: end;
+  color: white;
+  transition: color 0.5s ease;
+}
