@@ -1,6 +1,6 @@
 function Error() {
   return (
-    <div className="relative flex flex-col h-full items-center justify-center">
+    <div className="relative flex flex-col h-full items-center justify-center text-gray-3">
       <h2>404 Not Found</h2>
       <p>We're sorry, but the resource you're looking for does not exist.</p>
     </div>

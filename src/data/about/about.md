@@ -1,3 +1,5 @@
+# About.Me
+
 👀 你好呀，我是 ma5hr00m！
 
 我正在杭州电子科技大学读本科，目前是 [Vidar-Team](https://vidar.club) 的一名菜鸡 Web 手，也是[杭电助手](http://www.hduhelp.cn/)前端部的一员。
@@ -10,3 +12,7 @@
 - 花哨的 markdown 样式库
 - 浏览量统计
 - 响应式布局
+
+## 站点日志
+
+- 2023-07-31 网站上线

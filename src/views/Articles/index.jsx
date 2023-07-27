@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import axios from "axios";
 
+import '../../assets/agu-markdown.css'
+
 function Articles() {
   const [markdownContent, setMarkdownContent] = useState('');
   
@@ -17,14 +19,14 @@ function Articles() {
       } catch(error) {
         console.error('Error fetching markdown content:', error);
       }
-    } 
+    }
 
     fetchMarkdownContent();
 
   }, []);
 
   return (
-    <div className="relative w-820px m-x-auto p-20px">
+    <div className="markdown-body relative w-820px m-x-auto p-10px">
       <ReactMarkdown >{markdownContent}</ReactMarkdown>
     </div>
   )

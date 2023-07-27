@@ -4,7 +4,7 @@ import "./index.css";
 
 function NavBar() {
   return (
-    <nav className="flex h-60px justify-center bg-[#222] text-white">
+    <nav className="flex h-60px justify-center text-white">
       <div className="flex justify-between w-7xl items-center ">
         <span className="">ma5hr00m blog</span>
         <ul className="flex list-none space-x-7">

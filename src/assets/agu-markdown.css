@@ -1,0 +1,139 @@
+/* 全局设置 */
+.markdown-body {
+  font-family: monospace;
+  color: #e0e0e0;
+  background-color: #2a2a2a;
+
+  --h1-color: #8916FF;
+  --h2-color: #5988F8;
+  --h3-color: #42B768;
+  --h4-color: #F7DC1A;
+  --h5-color: #FF8E07;
+  --h6-color: #DE1700;
+  --a-color: #ED2D70;
+  --blockquote-background-color: #404040; 
+  --bloclquote-border-color: #45E2F1;
+  --pre-background-color: #1d1d1d;
+}
+
+/* 标题设置 */
+.markdown-body > h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+}
+
+.markdown-body > h1::before {
+  content: "H1";
+  position: absolute;
+  right: 100%;
+  color: var(--h1-color);
+}
+
+.markdown-body > h1 {
+  color: var(--h1-color);
+}
+
+.markdown-body > h2::before {
+  content: "H2";
+  position: absolute;
+  right: 100%;
+  color: var(--h2-color);
+}
+
+.markdown-body > h2 {
+  color: var(--h2-color);
+}
+
+.markdown-body > h3::before {
+  content: "H3";
+  position: absolute;
+  right: 100%;
+  color: var(--h3-color);
+}
+
+.markdown-body > h3 {
+  color: var(--h3-color);
+}
+
+.markdown-body > h4::before {
+  content: "H4";
+  position: absolute;
+  right: 100%;
+  color: var(--h4-color);
+}
+
+.markdown-body > h4 {
+  color: var(--h4-color);
+}
+
+.markdown-body > h5::before {
+  content: "H5";
+  position: absolute;
+  right: 100%;
+  color: var(--h5-color);
+}
+
+.markdown-body > h5 {
+  color: var(--h5-color);
+}
+
+.markdown-body > h6::before {
+  content: "H6";
+  position: absolute;
+  right: 100%;
+  color: var(--h6-color);
+}
+
+.markdown-body > h6 {
+  color: var(--h6-color);
+}
+
+
+/* 链接设置 */
+.markdown-body a {
+  text-decoration: none;
+  color: var(--a-color);
+}
+
+/* 光标悬浮，变色循环动画 */
+.markdown-body a:hover {
+  animation: a-color-cycle 5s infinite;
+}
+
+@keyframes a-color-cycle {
+  0% {
+    color: var(--a-color);
+  }
+  20% {
+    color: var(--h1-color);
+  }
+  40% {
+    color: var(--h2-color);
+  }
+  60% {
+    color: var(--h3-color);
+  }
+  80% {
+    color: var(--h4-color);
+  }
+  100% {
+    color: var(--a-color);
+  }
+}
+
+
+/* 引用设置 */
+.markdown-body > blockquote {
+  margin: 0;
+  padding: 2px 20px;
+  border-left: solid var(--bloclquote-border-color) 5px;
+  background-color: var(--blockquote-background-color);
+}
+
+.markdown-body > pre {
+  padding: 20px;
+  background-color: var(--pre-background-color);
+}
+
+.markdown-body > p {
+  font-size: 14px;
+}
